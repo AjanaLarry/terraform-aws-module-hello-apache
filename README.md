@@ -1,6 +1,6 @@
 This Terraform module will provision an EC2 Instance that is running Apache.
 
-This is Not intended for production use.
+This is not intended for production use.
 
 
 ```HCL
@@ -14,7 +14,7 @@ provider "aws" {
 }
 
 module "hello_apache" {
-  source = "./terraform_aws_module_hello_apache"
+  source = "./terraform-aws-module-hello-apache"
   vpc_id = "vpc-00DEFAULTVPC00"
   my_ip = "YOUR_IP_ADDRESS/32"
   public_key = "ssh-rsa AAAAB.../root/.ssh/terraform.pub"
